@@ -1,1 +1,104 @@
-{}
+{
+  "NgOnInit": {
+    "scope": "javascript,typescript",
+    "prefix": "ngoninit",
+    "body": [
+      "public ngOnInit(): void {",
+      "\t$1",
+      "}",
+    ],
+    "description": "Public NgOnInit"
+  },
+  "NgOnDestroy": {
+    "scope": "javascript,typescript",
+    "prefix": "ngondestroy",
+    "body": [
+      "public ngOnDestroy(): void {",
+      "\t$1",
+      "}",
+    ],
+    "description": "Public NgOnDestroy"
+  },
+  "Subscriptions to be destroyed": {
+    "scope": "javascript,typescript",
+    "prefix": "subs",
+    "body": [
+      "public subscriptions: Subscription[] = [];",
+      "",
+      "public ngOnDestroy(): void {",
+      "\tthis.subscriptions.forEach((el) => el?.unsubscribe());",
+      "}",
+    ],
+    "description": "Subscriptions to be destroyed"
+  },
+  "Catch API Error": {
+    "scope": "javascript,typescript",
+    "prefix": "catchApiError",
+    "body": [
+      ".catch((error: HttpErrorResponse$1) => this.modalAlertService.show(error))",
+    ],
+    "description": "Catch API Error"
+  },
+  "Finally toggle loader": {
+    "scope": "javascript,typescript",
+    "prefix": "finallyToggleLoader",
+    "body": [
+      ".finally(() => (this.isLoading = false));",
+    ],
+    "description": "Catch API Error"
+  },
+  "Template declaration": {
+    "scope": "html",
+    "prefix": "template#",
+    "body": [
+      "<ng-container *ngTemplateOutlet=\"$1\"></ng-container>",
+      "",
+      "<!-- ${1/([a-z]+)(?=[A-Z])|([A-Z])(?=[A-Z])|([A-Z][a-z]+)(?=$)|([A-Z][a-z]+)|([a-z]+)(?=$)/${1:/upcase}${1:+ }$2${2:+ }${3:/upcase}${4:/upcase}${4:+ }${5:/upcase}/g} -->",
+      "<ng-template #$1>",
+      "\t$2",
+      "</ng-template>",
+    ],
+    "description": "Template declaration"
+  },
+  "Template declaration - WITH SECTION COMMENT": {
+    "scope": "html",
+    "prefix": "template#with-section",
+    "body": [
+      "<!------------------",
+      "\tTEMPLATES SECTION",
+      "-------------------->",
+      "",
+      "<ng-container *ngTemplateOutlet=\"$1\"></ng-container>",
+      "",
+      "<!-- ${1/([a-z]+)(?=[A-Z])|([A-Z])(?=[A-Z])|([A-Z][a-z]+)(?=$)|([A-Z][a-z]+)|([a-z]+)(?=$)/${1:/upcase}${1:+ }$2${2:+ }${3:/upcase}${4:/upcase}${4:+ }${5:/upcase}/g} -->",
+      "<ng-template #$1>",
+      "\t$2",
+      "</ng-template>",
+    ],
+    "description": "Template declaration"
+  },
+  "spinner": {
+    "scope": "html",
+    "prefix": "btn-spinner",
+    "body": "<span *ngIf=\"$1\" class=\"spinner-border spinner-border-sm\"></span>",
+  },
+  "ng-container with *ngIf condition": {
+    "scope": "html",
+    "prefix": "ngIf",
+    "body": [
+      "<ng-container *ngIf=\"$1\">",
+      "\t$2",
+      "</ng-container>",
+    ]
+  },
+  "Custom tooltip": {
+    "scope": "html",
+    "prefix": "tooltip",
+    "body": [
+      "<!-- TOOLTIP -->",
+      "<ng-template #tooltip>",
+      "\t<base-tooltip title=\"$1\" bodyText=\"$2\" textColor=\"$3\"></base-tooltip>",
+      "</ng-template>"
+    ]
+  },
+}
