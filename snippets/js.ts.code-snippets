@@ -1,0 +1,50 @@
+{
+  "NgOnInit": {
+    "scope": "javascript,typescript",
+    "prefix": "ngoninit",
+    "body": [
+      "public ngOnInit(): void {",
+      "\t$1",
+      "}",
+    ],
+    "description": "Public NgOnInit"
+  },
+  "NgOnDestroy": {
+    "scope": "javascript,typescript",
+    "prefix": "ngondestroy",
+    "body": [
+      "public ngOnDestroy(): void {",
+      "\t$1",
+      "}",
+    ],
+    "description": "Public NgOnDestroy"
+  },
+  "Subscriptions to be destroyed": {
+    "scope": "javascript,typescript",
+    "prefix": "subs",
+    "body": [
+      "public subscriptions: Subscription[] = [];",
+      "",
+      "public ngOnDestroy(): void {",
+      "\tthis.subscriptions.forEach((el) => el?.unsubscribe());",
+      "}",
+    ],
+    "description": "Subscriptions to be destroyed"
+  },
+  "Catch API Error": {
+    "scope": "javascript,typescript",
+    "prefix": "catchApiError",
+    "body": [
+      ".catch((error: HttpErrorResponse$1) => this.modalAlertService.show(error))",
+    ],
+    "description": "Catch API Error"
+  },
+  "Finally toggle loader": {
+    "scope": "javascript,typescript",
+    "prefix": "finallyToggleLoader",
+    "body": [
+      ".finally(() => (this.isLoading = false));",
+    ],
+    "description": "Catch API Error"
+  },
+}
