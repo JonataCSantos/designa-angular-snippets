@@ -10,6 +10,7 @@
 | **Template declaration - WITH SECTION COMMENT** | `template#with-section` |
 | **spinner**                                     | `btn-spinner`           |
 | **ng-container with \*ngIf condition**          | `ngIf`                  |
+| **ng-container with NgSwitch**                  | `ngSwitch`              |
 | **Custom tooltip**                              | `tooltip`               |
 
 ---

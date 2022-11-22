@@ -53,4 +53,15 @@
       "</ng-template>"
     ]
   },
+  "ng-container with NgSwitch": {
+    "scope": "html",
+    "prefix": "ngSwitch",
+    "body": [
+      "<ng-container [ngSwitch]=\"${1:condition}\">",
+      "\t<ng-container *ngSwitchCase=\"${2:case}\">",
+      "\t\t$3",
+      "\t</ng-container>",
+      "</ng-container>",
+    ]
+  },
 }
