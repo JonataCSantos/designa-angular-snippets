@@ -12,6 +12,7 @@
 | **ng-container with \*ngIf condition**          | `ngIf`                  |
 | **ng-container with NgSwitch**                  | `ngSwitch`              |
 | **Custom tooltip**                              | `tooltip`               |
+| **Base page loader container**                  | `page-loader`           |
 
 ---
 
