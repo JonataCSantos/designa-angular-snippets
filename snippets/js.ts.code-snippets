@@ -23,7 +23,7 @@
     "scope": "javascript,typescript",
     "prefix": "subs",
     "body": [
-      "public subscriptions: Subscription[] = [];",
+      "private subscriptions: Subscription[] = [];",
       "",
       "public ngOnDestroy(): void {",
       "\tthis.subscriptions.forEach((el) => el?.unsubscribe());",
