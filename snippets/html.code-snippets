@@ -3,12 +3,12 @@
     "scope": "html",
     "prefix": "template#",
     "body": [
-      "<ng-container *ngTemplateOutlet=\"$1\"></ng-container>",
+      "<ng-container *ngTemplateOutlet=\"$1\" />",
       "",
       "<!-- ${1/([a-z]+)(?=[A-Z])|([A-Z])(?=[A-Z])|([A-Z][a-z]+)(?=$)|([A-Z][a-z]+)|([a-z]+)(?=$)/${1:/upcase}${1:+ }$2${2:+ }${3:/upcase}${4:/upcase}${4:+ }${5:/upcase}/g} -->",
       "<ng-template #$1>",
       "\t$2",
-      "</ng-template>",
+      "</ng-template>"
     ],
     "description": "Template declaration"
   },
@@ -20,28 +20,19 @@
       "\tTEMPLATES SECTION",
       "-------------------->",
       "",
-      "<ng-container *ngTemplateOutlet=\"$1\"></ng-container>",
+      "<ng-container *ngTemplateOutlet=\"$1\" />",
       "",
       "<!-- ${1/([a-z]+)(?=[A-Z])|([A-Z])(?=[A-Z])|([A-Z][a-z]+)(?=$)|([A-Z][a-z]+)|([a-z]+)(?=$)/${1:/upcase}${1:+ }$2${2:+ }${3:/upcase}${4:/upcase}${4:+ }${5:/upcase}/g} -->",
       "<ng-template #$1>",
       "\t$2",
-      "</ng-template>",
+      "</ng-template>"
     ],
     "description": "Template declaration"
   },
   "spinner": {
     "scope": "html",
     "prefix": "btn-spinner",
-    "body": "<span *ngIf=\"$1\" class=\"spinner-border spinner-border-sm\"></span>",
-  },
-  "ng-container with *ngIf condition": {
-    "scope": "html",
-    "prefix": "ngIf",
-    "body": [
-      "<ng-container *ngIf=\"$1\">",
-      "\t$2",
-      "</ng-container>",
-    ]
+    "body": "<span *ngIf=\"$1\" class=\"spinner-border spinner-border-sm\"></span>"
   },
   "Custom tooltip": {
     "scope": "html",
@@ -53,26 +44,15 @@
       "</ng-template>"
     ]
   },
-  "ng-container with NgSwitch": {
-    "scope": "html",
-    "prefix": "ngSwitch",
-    "body": [
-      "<ng-container [ngSwitch]=\"${1:condition}\">",
-      "\t<ng-container *ngSwitchCase=\"${2:case}\">",
-      "\t\t$3",
-      "\t</ng-container>",
-      "</ng-container>",
-    ]
-  },
   "page-loader": {
     "scope": "html",
     "prefix": "page-loader",
     "body": [
-      "<base-page-loader *ngIf=\"${1:condition}\"></base-page-loader>",
+      "<base-page-loader *ngIf=\"${1:condition}\" />",
       "",
       "<ng-container *ngIf=\"!${1:condition}\">",
       "\t$2",
-      "</ng-container>",
+      "</ng-container>"
     ]
-  },
+  }
 }

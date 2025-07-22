@@ -2,21 +2,13 @@
   "NgOnInit": {
     "scope": "javascript,typescript",
     "prefix": "ngoninit",
-    "body": [
-      "public ngOnInit(): void {",
-      "\t$1",
-      "}",
-    ],
+    "body": ["public ngOnInit(): void {", "\t$1", "}"],
     "description": "Public NgOnInit"
   },
   "NgOnDestroy": {
     "scope": "javascript,typescript",
     "prefix": "ngondestroy",
-    "body": [
-      "public ngOnDestroy(): void {",
-      "\t$1",
-      "}",
-    ],
+    "body": ["public ngOnDestroy(): void {", "\t$1", "}"],
     "description": "Public NgOnDestroy"
   },
   "Subscriptions to be destroyed": {
@@ -27,7 +19,7 @@
       "",
       "public ngOnDestroy(): void {",
       "\tthis.subscriptions.forEach((el) => el?.unsubscribe());",
-      "}",
+      "}"
     ],
     "description": "Subscriptions to be destroyed"
   },
@@ -35,16 +27,19 @@
     "scope": "javascript,typescript",
     "prefix": "catchApiError",
     "body": [
-      ".catch((error: HttpErrorResponse$1) => this.modalAlertService.show(error))",
+      ".catch((error: HttpErrorResponse$1) => this.modalAlertService.show(error))"
     ],
     "description": "Catch API Error"
   },
   "Finally toggle loader": {
     "scope": "javascript,typescript",
     "prefix": "finallyToggleLoader",
-    "body": [
-      ".finally(() => (this.isLoading = false));",
-    ],
+    "body": [".finally(() => (this.isLoading.set(false));"],
     "description": "Catch API Error"
   },
+  "TranslateTestingModule.withTranslations": {
+    "scope": "javascript,typescript",
+    "prefix": "translateTestingModule",
+    "body": ["TranslateTestingModule.withTranslations('', {})"]
+  }
 }

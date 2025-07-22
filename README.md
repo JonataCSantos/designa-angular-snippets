@@ -9,8 +9,6 @@
 | **Template declaration**                        | `template#`             |
 | **Template declaration - WITH SECTION COMMENT** | `template#with-section` |
 | **spinner**                                     | `btn-spinner`           |
-| **ng-container with \*ngIf condition**          | `ngIf`                  |
-| **ng-container with NgSwitch**                  | `ngSwitch`              |
 | **Custom tooltip**                              | `tooltip`               |
 | **Base page loader container**                  | `page-loader`           |
 
@@ -26,5 +24,6 @@
 | **Subscriptions to be destroyed** | `subs`                |
 | **Catch API Error**               | `catchApiError`       |
 | **Finally toggle loader**         | `finallyToggleLoader` |
+| **Translate Testing Module**      | `translateTestingModule` |
 
 ---
